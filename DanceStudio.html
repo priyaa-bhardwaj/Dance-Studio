@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="h.js"></script>
+</head>
+
+<body style="background-color: black;">
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="D.jpg" alt="Logo">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Dance Forms</a></li>
+            <li class="item"><a href="#gallery-section">Gallery</a></li>
+            <li class="item"><a href="#about-section">About Us</a></li>
+            <li class="item"><a href="#location-container">Location</a></li>
+           
+        </ul>
+        <div class="right">
+            <label>Find Us At-</label>
+            <span id="insta">
+                <a href="http://www.instagram.com" target="_blank">
+                    <img alt="Instagram"
+                        src="https://static.wixstatic.com/media/da7ef6dd1302486c9a67baebe4b364bc.png/v1/fill/w_23,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/da7ef6dd1302486c9a67baebe4b364bc.png">
+                </a>
+            </span>
+            <span id="face">
+                <a href="http://www.facebook.com" target="_blank">
+                    <img alt="Facebook"
+                        src="https://static.wixstatic.com/media/e0678ef25486466ba65ef6ad47b559e1.png/v1/fill/w_23,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e0678ef25486466ba65ef6ad47b559e1.png">
+                </a>
+            </span>
+            <span id="you">
+                <a href="http://www.youtube.com" target="_blank">
+                    <img alt="YouTube"
+                        src="https://static.wixstatic.com/media/e9bb463a1bc4434c9d33b81b1fe937f5.png/v1/fill/w_23,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9bb463a1bc4434c9d33b81b1fe937f5.png">
+                </a>
+            </span>
+    
+        </div>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit consequuntur aut perspiciatis, ipsa ex
+            quidem? Explicabo nobis soluta doloremque ex.</p>
+        <button class="btn"><a href="#contact-box">Get Started</a></button>
+
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">
+            Our Services
+        </h1>
+        <div id="services">
+            <div class="box" onmouseenter="time()" onmouseleave="hip()" id="hh"> 
+                <img src="D.jpg" alt="to be changed">
+                <h2 class="h-secondary center" id="h1">Hip Hop</h2>
+                </button>
+            </div>
+            <div class="box" onmouseenter="time1()" onmouseleave="hip1()">
+                <img src="D.jpg" alt="to be changed">
+                <h2 class="h-secondary center" id="h2">K-Pop</h2>
+
+            </div>
+            <div class="box" onmouseenter="time2()" onmouseleave="hip2()">
+                <img src="D.jpg" alt="to be changed">
+                <h2 class="h-secondary center" id="h3">Bollywood</h2>
+            </div>
+            <div class="box" onmouseenter="time3()" onmouseleave="hip3()">
+                <img src="D.jpg" alt="to be changed">
+                <h2 class="h-secondary center" id="h4">Free Style</h2>
+            </div>
+            <div class="box" onmouseenter="time4()" onmouseleave="hip4()">
+                <img src="D.jpg" alt="to be changed">
+                <h2 class="h-secondary center" id="h5">Mom's Batch</h2>
+            </div>
+        </div>
+    </section>
+    <section id="gallery-section">
+        <div class="slider-container">
+
+            <div class="slides fade">
+                <div class="slider-numbers">1/4</div>
+                <div class="slider-image"><img src="hiphop.jpg" alt="background_1"></div>
+            </div> <!-- slider -->
+        
+            <div class="slides fade">
+                <div class="slider-numbers">2/4</div>
+                <div class="slider-image"><img src="kpop.jpg" alt="background_2"></div>
+            </div> <!-- slider -->
+        
+            <div class="slides fade">
+                <div class="slider-numbers">3/4</div>
+                <div class="slider-image"><img src="bw.jpg" alt="background_3"></div>
+            </div> <!-- slider -->
+        
+            <div class="slides fade">
+                <div class="slider-numbers">4/4</div>
+                <div class="slider-image"><img src="kids.jpg" alt="background_4"></div>
+            </div> <!-- slider -->
+        
+            <!-- Slider Next and Previous buttons -->
+            <a class="prev" onclick="plusIndex(-1)">&#10094;</a>
+            <a class="next" onclick="plusIndex(+1)">&#10095;</a>
+        
+            <!-- Slider Selection Bullets -->
+            <div class="slider-bullets" id="slider-bullets">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+                <span class="dots" onclick="currentSlide(4)"></span>
+            </div> <!-- Slider Bullets -->
+        
+        </div>   
+        <!-- <div class="container">
+           <h1 class="h-primary center">Gallery</h1>
+        <div id="gallery">
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+            <div class="photos">
+                <img src="D.jpg" alt="Photos">
+            </div>
+        </div> -->
+       
+    </section>
+    <section id="about-section">
+        <h1 class="h-primary center">About Us</h1>
+        <div id="about">
+            <div class="about-us">
+                <div class="ass">
+                    <img src="D.jpg" alt="Founder">
+                    <h2 class="h-primary center">Founder</h2>
+                </div>
+                <p class="about-him">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi vero, dignissimos porro at
+                    sequi eveniet! Reiciendis saepe facere, aliquam molestiae quis totam libero iure at non, obcaecati
+                    cum provident, voluptatum repellat fugiat aliquid aperiam aut eius? Porro a dignissimos temporibus.
+                    Placeat dolore minima cumque iste quasi delectus quisquam rem sit est error ipsa veritatis sunt
+                    totam, voluptates, fugit ea similique illum magnam mollitia id ducimus quis corporis! Sequi illo
+                    adipisci minima id iusto consequuntur nam et dolorum animi! Qui labore quaerat quidem recusandae
+                    incidunt beatae delectus deserunt ullam eveniet aliquam, nisi aspernatur a rerum iste, reprehenderit
+                    aut aperiam deleniti.
+                </p>
+                <p class="about-him">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit
+                    temporibus reiciendis tenetur vitae accusantium enim blanditiis laborum quas distinctio quos et, est
+                    accusamus dolorem deserunt a, rerum aliquam at magni? Aut, facere voluptatem.</p>
+            </div>
+        </div>
+    </section>
+    <section id="location-container">
+        <h1 class="h-primary center">Our Studio</h1>
+        <div id="location">
+            <div class="kis">
+                <img src="D.jpg" alt="KIS">
+            </div>
+            <p class="about-him">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae in rerum facilis
+                atque excepturi temporibus placeat vitae repellendus ea pariatur! Distinctio dolor dignissimos, itaque
+                fugiat cupiditate porro saepe consectetur excepturi debitis expedita illo perspiciatis in reprehenderit
+                quas tenetur vero voluptatibus ipsam qui, harum aliquam. Optio quo enim adipisci repellendus ut.</p>
+        </div>
+    </section>
+    <section class="register">
+        <h1 class="h-primary center">Enter Your Details</h1>
+        <p>Register to get a call back for enquiry to be a part of us </p>
+        <div id="contact-box">
+            <form action="">
+                <div class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form">
+                    <label for="phone">Phone Number:</label>
+                    <input type="number" name="phone" id="phone" placeholder="Enter your mobile number">
+                </div>
+                <div class="form">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="Enter your address">
+                </div>
+                <div class="form">
+                    <label for="dform">Select dance forms of your interest:</label><br>
+                    <input type="checkbox" name="hh" value="hh">Hip-Hop<br>
+                    <input type="checkbox" name="kp" value="kp">K-pop <br>
+                    <input type="checkbox" name="b" value="b">Bollywood<br>
+                    <input type="checkbox" name="fs" value="fs">Freestyle<br>
+                    <input type="checkbox" name="mb" value="mb">Moms Batch<br>
+                </div>
+            </div>
+            <div class="butt">
+                <input type="submit" value="Submit">
+                <input type="reset" value= "Reset">
+            </div>
+        </form>
+    </section>
+    <footer class="center">
+        Copyright || &copy; || www.dancestudio.com || All Rights Reserved
+    </footer>
+
+</body>
+
+</html>

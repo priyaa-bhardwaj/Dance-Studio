@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logo {
+    margin: 9px 16px;
+}
+
+#logo img {
+    height: 70px;
+    margin: 0px 2px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 300px;
+    height: 425px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(Dance.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 516px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#home .btn a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#services {
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#services .box {
+    background-color: rgb(239 211 223);
+    padding: 20px;
+    margin: 3px 6px;
+    border-radius: 20px;
+    border: 2px solid red;
+    transition: transform 0.2s;
+}
+
+#services .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+
+}
+#services .box:hover{
+    background-color: white;
+    content: "Class at 4";
+    transform: scale(1.2);
+    /* transform: scale(1); */
+}
+
+.gallery-section{
+    height: 700px;
+}
+#gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#gallery img{
+    height: 130px;
+}
+.photos{
+    padding: 10px;
+    /* margin: 1px; */
+    /* border: 2px solid red; */
+}
+.about-him{
+    font-family: 'Bree Serif', serif;
+    color: rgb(145, 18, 18);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.ass img{
+    border: 2px solid red;
+    border-radius: 100%;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+.kis img{
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 400px;
+}
+.register{
+    position: relative;
+}
+.register::before{
+    content: "";
+    position: absolute;
+    background: url(Dance.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box input[type="checkbox"]{
+    width: 10%;
+    padding: 0.5rem;
+ 
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    padding-bottom: 5px;
+}
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: 'Bree Serif', serif;
+}
+.register p{
+    font-family: 'Bree Serif', serif;
+    color: rgb(27, 4, 46);
+    text-align: center;
+    font-size: 1.5rem;
+}
+footer{
+    background: black;
+    color: purple;
+    padding: 9px 20px;
+
+}
+/* Utility classes */
+.h-primary {
+    color: aliceblue;
+    font-family: "Sofia", sans-serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: "Sofia", sans-serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    font-family: "Sofia", sans-serif;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s;
+
+}
+.btn:hover{
+    transform: scale(1.3);
+}
+
+.center {
+    text-align: center;
+}
+a img {
+        border: 3px solid #555;
+        border-radius: 100px;
+    width: 25px;
+    height: 25px;
+}
+#insta img:hover {
+    background-color: rgb(202, 44, 70);
+}
+
+#face img:hover {
+    background-color: rgb(14, 55, 240);
+}
+
+#you img:hover {
+    background-color: rgb(248, 9, 9);
+}
+
+#insta a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+#face a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+#you a {
+    padding: 5px;
+    text-decoration: none;
+}
+.right {
+    display: flex;
+    margin-left: auto;
+    padding: 30px;
+}
+
+
+.butt{
+    display: flex;
+    height: 30px;
+    padding: 3px 500px;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.butt input{
+    font-family: "Sofia", sans-serif;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 12px;
+    width: 90px;
+
+}
+label{
+    font-family: 'Bree Serif', serif;
+    color: white;
+}
+ #hh{
+    cursor: pointer;
+ }
+ .slider-container {
+    width: 720px;
+    margin: auto;
+    position: relative;
+}
+
+.slider-container .fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.slider-container .slides .slider-numbers {
+    position: absolute;
+    padding: 15px;
+    font-size: 15px;
+    color: #FFF
+}
+
+.slider-container .slides .slider-caption {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    color: #FFF;
+    padding: 10px;
+}
+
+.slider-container .prev,
+.slider-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFF;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.slider-container .next {
+    right: 0px;
+}
+
+.slider-container .prev:hover{
+    background: rgba(0, 0, 0, 0.6);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+.slider-container .next:hover {
+    background: rgba(0, 0, 0, 0.6);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+}
+
+.slider-container .slider-bullets {
+    text-align: center;
+}
+
+.slider-container .slider-bullets .dots {
+    display: inline-block;
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #808080;
+    border-radius: 50%;
+}
+
+.slider-container .slider-bullets .dots:hover {
+    background-color: #383838;
+    cursor: pointer;
+}
+
+.slider-container .slider-bullets .active {
+    background-color: #383838;
+}

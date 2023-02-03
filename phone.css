@@ -1,0 +1,56 @@
+*{
+    right: 0px;
+}
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a {
+    padding: 0px;
+    border: 1px solid black;
+}
+.right{
+    margin: auto;
+}
+#home{
+    height: 400px;
+    padding: 0px 2px;
+}
+#home::before{
+    height: 566px;
+}
+.h-primary{
+    font-size: 40px;
+}
+#home p{
+    font-size: 18px;
+}
+
+#services{
+    flex-direction: column;
+}
+#services .box{
+    padding: 4px;
+}
+.box img{
+    width: 300px;
+}
+.box h2{
+    padding-bottom: 5px;
+}
+#gallery-section{
+    flex-wrap: wrap;
+}
+.butt{
+    margin-top: 5px;
+    padding: 10px 150px;
+    width: 10px;
+}
+#contact-box{
+    padding: 9px;
+}
+.butt input{
+    font-size: 18px;
+}
+.right{
+    padding: 0px;
+}
